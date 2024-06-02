@@ -1,0 +1,107 @@
+/* Estilos generales */
+body {
+    background-color: #f7f7f7;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Estilos de formulario */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    /* background-color: rgb(24, 215, 139); */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    /* background-color: aqua; */
+}
+
+.form-group input, textarea{
+    background-color: #e2eef9;
+    max-width: 95%;
+    align-items: center;
+    
+}
+.form-group textarea{
+    height: 120px;
+}
+.form-group .recomendacion{
+    color: #d91539;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+    /* Evita el cambio de tamaño manual del textarea */
+}
+
+.form-group button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos de redirección */
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+}
+
+.container h1 {
+    margin-top: 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}

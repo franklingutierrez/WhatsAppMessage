@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirigiendo...</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Redirigiendo a WhatsApp...</h1>
+        <img src="logo.png" alt="Logo" class="logo">
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const link = params.get('link');
+            if (link) {
+                setTimeout(() => {
+                    window.location.href = link;
+                }, 2000); // Esperar 2 segundos antes de redirigir
+            }
+        </script>
+    </div>
+</body>
+
+</html>
